@@ -12,6 +12,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
      <NavBar/>
+     <NavBar/>
       <Routes>
         <Route path="/home.jsx" element={<Home />} />
         <Route path="/shop_here.jsx" element={<Shop_here />} />
