@@ -1,0 +1,161 @@
+
+.shop-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.shop-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.shop-description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+  width: 500px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 120px;
+}
+
+
+.product-card {
+  background: #ffc219ad;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.product-image-container {
+  position: relative;
+  width: 220px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-background {
+  width: 170px;
+  height: 90px;
+  background-color: #f0f0f0c9;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 10px;
+  z-index: 0;
+}
+
+.product-image {
+  width: 212px;
+  height: 183px;
+  object-fit: contain;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.product-name {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+
+.product-weight {
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+
+.view-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100px;
+}
+
+.view-button:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+}
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.view-button,
+.cart-button {
+  background: none;
+  border: none;
+  padding: 5px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
+.cart-button svg,
+.view-button svg {
+  color: #333;
+  width: 24px;
+  height: 24px;
+}

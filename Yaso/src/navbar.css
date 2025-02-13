@@ -1,0 +1,77 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #efeff4;
+  padding: 15px 20px;
+  color: #FFC219;
+  box-shadow: 5px 5px 5px rgb(107, 105, 105);
+  
+}
+
+.navbar-logo img {
+  width: 150px;
+  height: auto;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 90px;
+  margin-left: 450px ;
+}
+
+.navbar-menu li {
+  position: relative;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #FFC219;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  list-style: none;
+  padding: 10px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+  color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar-cart {
+  cursor: pointer;
+  margin-right: 50px;
+}
+.navbar-menu li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.navbar-menu li a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.active-link {
+  border-bottom: 3px solid #007bff; /* Underline effect */
+  font-weight: bold;
+  color: #007bff !important;
+}
+

@@ -1,0 +1,156 @@
+.footer {
+  background: #FAD7BA;
+  color: rgb(0, 0, 0);
+  padding: 30px 0;
+  text-align: center;
+  height: 300px;
+}
+.footer-section{
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.footer-links li {
+  margin-bottom: 20px; /* Adjust the gap between each link */
+}
+
+.footer-links li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(150, 23, 23);
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+} 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: nowrap; /* Ensures sections stay in one row */
+  gap: 0px;
+}
+
+/* Left Image */
+.footer-logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.footer-logo {
+  width: 250px;
+  height: auto;
+  margin-left: -30px;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+
+/* Footer Sections */
+.footer-section {
+  flex: 1;
+  max-width: 220px; /* Slightly reduced width to bring sections closer */
+  text-align: left;
+  padding: 5px;
+}
+
+/* Adjusting Section Spacing */
+.company {
+  margin-right: -30px; /* Move COMPANY closer to LEAVE A MESSAGE */
+}
+
+.message {
+  margin-left: -40px; /* Further reduce space between COMPANY and LEAVE A MESSAGE */
+  margin-right: 5px;
+}
+
+.contact {
+  margin-left: 10px;
+}
+
+/* Company Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Leave a Message */
+.footer-input,
+.footer-textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 3px 0;
+  border-radius: 5px;
+  border: none;
+  padding-top: 20px;
+}
+
+.footer-textarea {
+  height: 60px;
+}
+
+.footer-button {
+  background: #FFC107;
+  color: #333;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.footer-button:hover {
+  background: #FFA000;
+}
+
+/* Contact Section */
+.footer-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-icons img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+/* Responsive Fix for Small Screens */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer-logo-container {
+    justify-content: center;
+  }
+
+  .message {
+    margin: 10px 0;
+  }
+}
